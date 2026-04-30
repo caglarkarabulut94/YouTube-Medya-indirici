@@ -4,6 +4,14 @@
 
 ### Eklendi / Güncellendi
 
+- **Hata Bildirimleri:** Aynı listeden aynı video birden fazla indirilmeye çalışıldığında uyarı eklendi.
+- **Hata Bildirimleri:** Detaylı hata mesajları eklendi.
+- **4K Video İndirme:** 4K video indirme özelliği eklendi.
+
+## [v4.141] - 2026-04-09
+
+### Eklendi / Güncellendi
+
 - **Kod Modernizasyonu:** Proje genelindeki tüm nullability uyarıları (CS8618, CS8600 vb.) temizlendi.
 - **Sıfır Uyarı Politikası:** Derleme süreci 0 hata ve 0 uyarı ile sonuçlanacak şekilde optimize edildi.
 - **Performans:** Bellek yönetimi ve değişken ilklendirme süreçleri iyileştirildi.
