@@ -1,5 +1,12 @@
 # Changelog
 
+## [v4.151] - 2026-05-07
+
+### Eklendi / Düzeltildi
+- **Akıllı URL Ayrıştırma:** Çalma listesi içinden kopyalanan video linkleri (`watch?v=...&list=...`) artık tüm listeyi değil, sadece seçili videoyu indirecek şekilde optimize edildi.
+- **JavaScript Çalışma Zamanı:** YouTube'un yeni imza algoritması hatalarını önlemek için Windows yerleşik `jscript` motoru tüm indirme süreçlerine dahil edildi.
+- **Kesin Engel:** Tekli video indirmelerinde yanlışlıkla çalma listesi indirilmesini önlemek için `--no-playlist` kuralı sıkılaştırıldı.
+
 ## [v4.150] - 2026-04-30
 
 ### Eklendi / Güncellendi
