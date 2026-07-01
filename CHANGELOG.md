@@ -1,60 +1,58 @@
 # Changelog
 
-## [v4.151] - 2026-05-07
+## [v4.153] - 2026-06-30
 
-### Eklendi / Düzeltildi
-- **Akıllı URL Ayrıştırma:** Çalma listesi içinden kopyalanan video linkleri (`watch?v=...&list=...`) artık tüm listeyi değil, sadece seçili videoyu indirecek şekilde optimize edildi.
-- **JavaScript Çalışma Zamanı:** YouTube'un yeni imza algoritması hatalarını önlemek için Windows yerleşik `jscript` motoru tüm indirme süreçlerine dahil edildi.
-- **Kesin Engel:** Tekli video indirmelerinde yanlışlıkla çalma listesi indirilmesini önlemek için `--no-playlist` kuralı sıkılaştırıldı.
+### Eklendi / Güncellendi
+
+- **Bağlantı Kısıtlamaları Giderildi:** YouTube'un indirme sıklığına bağlı olarak uyguladığı erişim kısıtlamaları (403 hatası) büyük oranda çözüldü. VPN kullanımında veya art arda yapılan indirmelerde yaşanan bağlantı kopmaları giderildi.
+- **Otomatik Yeniden Deneme Sistemi:** İndirme sırasında geçici bir ağ veya erişim hatası oluştuğunda işlemin tamamen iptal olması engellendi. Hata durumunda uygulama 7 saniye bekleyip indirmeyi otomatik olarak tekrar deniyor (maksimum 2 deneme).
+- **Genişletilmiş Çalma Listesi Desteği:** 100'den fazla içerik barındıran uzun çalma listelerindeki eksik yükleme problemi çözüldü. Artık listelerin tamamı eksiksiz olarak algılanıp indirilebiliyor.
 
 ## [v4.150] - 2026-04-30
 
 ### Eklendi / Güncellendi
 
-- **Hata Bildirimleri:** Aynı listeden aynı video birden fazla indirilmeye çalışıldığında uyarı eklendi.
-- **Hata Bildirimleri:** Detaylı hata mesajları eklendi.
-- **4K Video İndirme:** 4K video indirme özelliği eklendi.
+- **Çift İndirme Koruması:** Aynı çalma listesinde bir şarkı veya video birden fazla kez yer alıyorsa, uygulamanın aynı dosyayı boş yere tekrar indirmesi engellendi ve kullanıcıya bilgi verilmesi sağlandı.
+- **Daha Açıklayıcı Hatalar:** Bir sorun yaşandığında arka planda ne olduğunu anlamanızı kolaylaştıran daha net ve detaylı uyarı mesajları eklendi.
+- **Yüksek Çözünürlük (4K) Desteği:** Artık destekleyen videoları kristal netliğinde 4K çözünürlüğünde indirebilirsiniz.
 
 ## [v4.141] - 2026-04-09
 
-### Eklendi / Güncellendi
+### İyileştirmeler
 
-- **Kod Modernizasyonu:** Proje genelindeki tüm nullability uyarıları (CS8618, CS8600 vb.) temizlendi.
-- **Sıfır Uyarı Politikası:** Derleme süreci 0 hata ve 0 uyarı ile sonuçlanacak şekilde optimize edildi.
-- **Performans:** Bellek yönetimi ve değişken ilklendirme süreçleri iyileştirildi.
+- **Daha Kararlı Çalışma:** Uygulamanın altyapısındaki görünmez hatalar temizlendi, böylece çökme veya donma gibi sorunlar en aza indirildi.
+- **Performans Optimizasyonu:** Bellek kullanımı ve uygulamanın çalışma hızı iyileştirilerek çok daha akıcı bir deneyim sağlandı.
 
 ## [v4.140] - 2026-04-06
 
 ### İyileştirmeler
 
-- **Bağlantı Yönetimi:** İnternet erişimi kısıtlı olduğunda oluşan "yalancı indirme" hatası giderildi.
-- **Hata Bildirimleri:** Bağlantı hataları artık kırmızı renkli ve daha açıklayıcı mesajlarla kullanıcıya sunuluyor.
-- **Klasör Yönetimi:** Playlist indirmelerinde hatalı durumlarda gereksiz/boş klasör oluşturulması engellendi.
-- **UI Akıcılığı:** Skeleton (iskelet) yükleme animasyonlarının hata durumunda durmaması sorunu çözüldü.
+- **Yalancı İndirme Sorunu Çözüldü:** İnternet kesildiğinde uygulamanın dosyayı indiriyormuş gibi yapıp başarıyla tamamlandı demesi sorunu düzeltildi.
+- **Net İnternet Uyarıları:** Bağlantı koptuğunda ekranı kaplayan kırmızı renkli uyarılarla durumun hemen fark edilmesi sağlandı.
+- **Temiz Klasör Düzeni:** İndirme işlemi başarısız olduğunda bilgisayarınızda gereksiz yere boş klasörler bırakılmasının önüne geçildi.
+- **Arayüz Akıcılığı:** Hata alındığında yükleme animasyonlarının donup kalması veya sürekli dönmeye devam etmesi sorunu giderildi.
 
 ## [v3.100] - v4.0.0 (Tasarım Güncellemesi)
 
-### Eklendi
+### Eklendi / Güncellendi
 
-- **Modern UI:** Windows 11 stiline uygun minimalist ve karanlık tema (Dark Mode) tasarımı.
-- **Görsel İyileştirmeler:** Gölge efektleri ve modern ikon setleri eklendi.
-- **Özet Ekranı:** İndirme tamamlandığında Yeni, Mevcut, Silinen ve Hatalı dosyaları gösteren detaylı özet formu.
-- **Hız Göstergesi:** İndirme sırasında dinamik hız ve ilerleme yüzdesi eklendi.
+- **Yepyeni Tasarım:** Uygulama, göz yormayan karanlık teması (Dark Mode) ve modern görünümüyle tamamen yenilendi.
+- **Detaylı Özet Ekranı:** İndirme bittiğinde kaç dosyanın yeni eklendiğini, kaçının zaten var olduğunu veya hata verdiğini gösteren kullanışlı bir rapor ekranı eklendi.
+- **Canlı Hız Göstergesi:** Artık dosyaların inme hızını ve yüzde kaçının tamamlandığını anlık olarak takip edebilirsiniz.
 
 ## [v2.0.0] - v3.0.0 (Fonksiyonel Gelişim)
 
-### Eklendi
+### Eklendi / Güncellendi
 
-- **Playlist Desteği:** Tüm oynatma listesini tek tıkla indirme özelliği.
-- **Kalite Seçimi:** Video çözünürlüğü ve format (MP4, MKV, WebM) ayarları eklendi.
-- **Otomatik Güncelleme:** Uygulama açılışında yeni sürüm kontrolü ve otomatik motor (yt-dlp/ffmpeg) güncelleme sistemi.
+- **Toplu İndirme Özelliği:** Artık koca bir oynatma listesini (Playlist) tek bir tıklamayla tamamen indirebilirsiniz.
+- **Kalite ve Format Seçimi:** Videoların görüntü kalitesini ve formatını (MP4, MKV vb.) kendi isteğinize göre belirleme imkanı sunuldu.
+- **Otomatik Altyapı Güncellemesi:** Uygulama her açıldığında indirme motorunu kendi kendine güncelleyerek YouTube'un yeniliklerine hızlıca ayak uydurması sağlandı.
 
 ## [v1.0.0] - İlk Sürüm
 
 ### Özellikler
 
-- Temel YouTube video ve ses (MP3) indirme motoru.
-- `yt-dlp` ve `ffmpeg` entegrasyonu.
-- Kullanıcı dostu temel arayüz.
+- **İlk Buluşma:** YouTube videolarını ister görüntülü ister sadece ses (MP3) olarak indirebilen temel altyapı oluşturuldu.
+- **Kullanım Kolaylığı:** Karmaşadan uzak, herkesin rahatça anlayabileceği sade bir arayüz tasarlandı.
 
 ---
