@@ -26,7 +26,7 @@
 
 ![youtube-medya-indirici-ayarlar](screenshots/youtube-medya-indirici-ayarlar.webp)
 
-![Youtube-Medya-indirici-app-tamamlandi-ekrani](Youtube-Medya-indirici-app-tamamlandi-ekrani.webp)
+![Youtube-Medya-indirici-app-tamamlandi-ekrani](screenshots/Youtube-Medya-indirici-app-tamamlandi-ekrani.webp)
 
 ## 🛠️ Kurulum ve Kullanım
 
