@@ -26,8 +26,6 @@
 
 ![youtube-medya-indirici-ayarlar](screenshots/youtube-medya-indirici-ayarlar.webp)
 
-![youtube-medya-indirici-sonuc-ekrani](screenshots/youtube-medya-indirici-sonuc-ekrani.webp)
-
 ## 🛠️ Kurulum ve Kullanım
 
 1.  **İndirme:** Repository'den (`YoutubeIndirici.exe`) dosyasını indirin.
