@@ -1,5 +1,15 @@
 # Changelog
 
+## [v4.154] - 2026-07-05
+
+### İyileştirmeler
+
+- **Kusursuz Şarkı Tespiti:** Önceden aynı sanatçının farklı şarkıları, sırf sanatçı ismi uzun olduğu için program tarafından "Aynı Şarkı" zannedilebiliyordu. Artık her bir şarkı tamamen birbirinden bağımsız olarak analiz ediliyor ve bu kafa karışıklığı kökünden çözüldü.
+- **Liste Tarama Hızı:** Gereksiz tekrarlayan tarama işlemleri kaldırılarak çalma listelerinin analizi ve sonuç raporlaması daha hızlı hale getirildi.
+- **Bağlantı Kısıtlamaları Giderildi:** YouTube'un indirme sıklığına bağlı olarak uyguladığı erişim kısıtlamaları (403 hatası) büyük oranda çözüldü. VPN kullanımında veya art arda yapılan indirmelerde yaşanan bağlantı kopmaları giderildi.
+- **Otomatik Yeniden Deneme Sistemi:** İndirme sırasında geçici bir ağ veya erişim hatası oluştuğunda işlemin tamamen iptal olması engellendi. Hata durumunda uygulama 7 saniye bekleyip indirmeyi otomatik olarak tekrar deniyor (maksimum 2 deneme).
+- **Genişletilmiş Çalma Listesi Desteği:** 100'den fazla içerik barındıran uzun çalma listelerindeki eksik yükleme problemi çözüldü. Artık listelerin tamamı eksiksiz olarak algılanıp indirilebiliyor.
+
 ## [v4.153] - 2026-06-30
 
 ### Eklendi / Güncellendi
