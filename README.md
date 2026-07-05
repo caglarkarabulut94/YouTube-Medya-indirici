@@ -1,4 +1,4 @@
-# <img src="screenshots/YoutubeMedyaIndirici.ico" width="50px" alt="Logo"> YouTube Medya İndirici (v4.141)
+# <img src="screenshots/YoutubeMedyaIndirici.ico" width="50px" alt="Logo"> YouTube Medya İndirici (v4.154)
 
 **YouTube Medya İndirici**, YouTube üzerinden yüksek kalitede video ve ses dosyalarını (MP3) hızlı ve kolay bir şekilde indirmenize olanak tanıyan, modern arayüzlü ve taşınabilir (portable) bir Windows uygulamasıdır.
 
